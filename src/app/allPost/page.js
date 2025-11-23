@@ -14,11 +14,11 @@ async function page() {
                 {
                     allposts.map((ele, idx) => {
                         return (
-                            <div className="flex justify-start items-center gap-3">
+                            <div key={idx} className="flex justify-start items-center gap-3">
                                 <p className="text-white">{idx + 1} :</p>
-                            <p key={idx} className="text-md text-white cursor-pointer hover:text-yellow-300 hover:translate-x-3 w-max transition-all ease-in-out duration-250" >
-                                <Link href={`/article/${ele.id}`}>{ele.title}</Link>
-                            </p>
+                                <p className="text-md text-white cursor-pointer hover:text-yellow-300 hover:translate-x-3 w-max transition-all ease-in-out duration-250" >
+                                    <Link href={`/article/${ele.id}`}>{ele.title}</Link>
+                                </p>
                             </div>
                         )
                     })

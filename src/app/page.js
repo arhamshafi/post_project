@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Search from "./Search";
 
 export default async function Home() {
 
@@ -13,8 +14,9 @@ export default async function Home() {
 
 
   return (
-    <div className="w-full min-h-screen bg-black py-1 px-8 select-none">
+    <div className="w-full min-h-screen bg-black py-1 px-8 select-none relative">
       <h1 className="text-center text-white font-bold mt-10 text-3xl tracking-[2px]  ">Post API</h1>
+      <div className="w-[300px] h-max absolute top-20 right-10  "> <Search/> </div>
       <h1 className=" text-2xl mt-10 text-center tracking-[10px] text-yellow-400" > Feature Post </h1>
 
       <div className=" mt-16 ">
