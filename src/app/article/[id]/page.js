@@ -32,10 +32,10 @@ async function page({ params }) {
     return (
         <div className=" w-full min-h-screen bg-black text-white flex justify-center items-center flex-col gap-5 select-none" >
             <h1 className="text-2xl font-bold text-yellow-500" >{post.title}</h1>
-            <p style={{ color: '#666', fontStyle: 'italic' }}>
+            <p style={{ color: '#666', fontStyle: 'italic' }}  >
                 By {user.name} | Post #{post.id}
             </p>
-            <p style={{ lineHeight: '1.6' }}>{post.body}</p>
+            <p style={{ lineHeight: '1.6' }} className="w-1/2 text-center" >{post.body}</p>
         </div>
     )
 }

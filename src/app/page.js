@@ -7,10 +7,7 @@ export default async function Home() {
     { next: { revalidate: 3600 } }
   ).then((r) => r.json());
 
-  // console.log(post);
-
   const feature_post = post.slice(0, 10)
-  // console.log(feature_post);
 
 
   return (

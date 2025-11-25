@@ -46,7 +46,7 @@ function Search() {
                 <div className="w-full bg-white text-black mt-2 rounded-md max-h-[500px] overflow-y-auto p-2">
                     {data.length > 0 ? (
                         data.map((p, i) => (
-                            <p key={i} className="text-sm py-1 border-b last:border-none">
+                            <p key={i} className="text-sm py-1 border-b last:border-none hover:bg-gray-200 px-3 text-center hover:scale-103 transition-all ease-in-out duration-150 ">
                                 <Link href={`/article/${p.id}`} >{p.title}</Link>
                             </p>
                         ))
