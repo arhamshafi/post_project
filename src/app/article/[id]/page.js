@@ -6,7 +6,7 @@ export async function generateStaticParams() {
         next: { revalidate: 3600 }
 
     }).then((r) => r.json())
-    // gen ma cahce / revalidate ku ni kiya ?
+    //  cahce kha save hota ha or max kitna data save kr sakty hain  ?
 
     return posts.slice(0, 20).map(post => (
         { id: post.id.toString() }
